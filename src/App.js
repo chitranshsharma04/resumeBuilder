@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import jsPDF from "jspdf";
-import placeHolder from "./placeholder.png";
 function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -147,7 +145,7 @@ function App() {
     var words = skills.split(" ");
     var lines = [];
     var currentLine = [];
-    var k = 0;
+
     for (var i = 0; i < words.length; i++) {
       currentLine.push(words[i]);
 
